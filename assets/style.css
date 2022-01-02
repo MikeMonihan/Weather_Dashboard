@@ -1,0 +1,62 @@
+:root {
+    --primary: #c0cace;
+    --secondary: #9cabae;
+    --tertiary: #788085;
+    --light-dark: #3e56df;
+    --dark: #1d3ce7;
+    --border-radius: .2rem;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--primary);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+    line-height: 1.5;
+    font-size: 16px;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 600;
+    margin: 0;
+    color: var(--dark);
+    line-height: 1.25;
+  }
+  
+  main {
+    margin: 15px auto;
+    width: 94%;
+  }
+  
+  p {
+    font-size: 1.1rem;
+  }
+  .hero {
+    padding: 1% ;
+    background-color: var(--dark);
+    color: var(--primary);
+  }
+  
+  .hero p {
+    max-width: 50%;
+  }
+  
+  .app-title {
+    font-size: 3rem;
+    background-color: var(--primary);
+    color: var(--dark);
+    padding: 0 10px;
+    display: inline-block;
+    border-radius: var(--border-radius);
+  }
+
