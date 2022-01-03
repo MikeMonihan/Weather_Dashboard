@@ -58,7 +58,6 @@
     border-radius: var(--border-radius);
     text-align: center;
   }
- /*Needs to be edited*/
   .btn {
     font-size: 1.3rem;
     text-decoration:none;
@@ -98,7 +97,28 @@
   .card-body {
     padding: 2.5%;
   }
-
+   
+   .card5 {
+    margin: 0 0 20px 0;
+    padding: 10px;
+    width:fit-content;
+    border-radius: var(--border-radius);
+  }
+  
+  .card-header5 {
+    color: var(--dark);
+    background-color: var(--dark);
+    padding: 2.5%;
+    border-radius: calc(.18rem - 1px) calc(.18rem - 1px) 0 0;
+  }
+  
+  .card-body5 {
+    padding: 2.5%;
+    background-color: var(--dark);
+  }
+  .colorWhite{
+    color: white;
+  }
   .form-label,
   .form-input,
   .form-textarea {
@@ -150,8 +170,6 @@
     text-transform: uppercase;
   }
   
-  
-
   .flex-row {
     display: flex;
     flex-wrap: wrap;
@@ -164,4 +182,24 @@
   }
   .flex-grow {
     flex: 1 0 auto;
+}
+.justify-space-between {
+    justify-content: space-between;
+  }
+  
+.fillContainer{
+    object-fit: fill;
+    width: 85%;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+.fillHeight{
+    height: 100%;
+
+}
+.fiveDay{
+    padding-left: 14%;
+
 }

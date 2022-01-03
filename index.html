@@ -17,13 +17,11 @@
       <h1 class="app-title "> Weather Dashboard</h1>
     </header>
   
-    <main class="flex-row justify-space-between">
-        <div class="col-12 col-md-4">
+    <main class="flex-row ">
+        <div class="col-12 col-md-4 fillHeight">
           <div class="card">
             <h2 class="card-header">Search for a city: </h2>
-            <form id="cityForm" class="card-body">
-             <!-- <label class="form-label" for="username">Username</label>-->
-              
+            <form id="cityForm" class="card-body">              
              <input name="city" id="city" type="text" autofocus="true" class="form-input" placeholder="Cleveland" />
               
               <button type="submit" class="btn">Search</button>
@@ -42,8 +40,8 @@
           </div>
         </div>
     
-        <div class="col-12 col-md-8 ">
-          <h2 class="subtitle">Showing Weather for: <span id="searchCity"></span> <span id="tOD"></span></h2>
+        <div class="col-12 col-md-8 fillContainer">
+          <h2 class="subtitle">Showing Weather for: <span id="searchCity"></span> <span id="tOD"></span><img id="icon" alt="" width="50"></h2>
           <p id="temp">Temp: </p>
           <p id="wind">Wind: </p>
           <p id="humid">Humidity: </p>
@@ -53,56 +51,56 @@
         </div>
     
 
-        <div class="flex-row min-100-vh">
+        <div class="min-100-vh fiveDay ">
             <h2 class="subtitle">5 Day forecast for: <span id="searchCityAgain"></span></h2>
-            <div class="card">
-            <h3 class="card-header text-uppercase"></h3>
-            <div class="card-body">
-            <p id="temp">Temp: </p>
-            <p id="wind">Wind: </p>
-            <p id="humid">Humidity: </p>
-            <p id="uv">UV Index: </p>
+            <div class="flex-row colorWhite ">
+            <div class="card5">
+            <h3 class="card-header5 colorWhite" id="head1"></h3>
+            <div class="card-body5">
+            <img id="icon1" alt="" width="50">    
+            <p id="temp1">Temp: </p>
+            <p id="wind1">Wind: </p>
+            <p id="humid1">Humidity: </p>
             </div>
-            <div class="card">
-            <h3 class="card-header text-uppercase"></h3>
-            <div class="card-body">    
-            <p id="date"></p>
-            <p id="temp">Temp: </p>
-            <p id="wind">Wind: </p>
-            <p id="humid">Humidity: </p>
-            <p id="uv">UV Index: </p>
             </div>
-            <div class="card">
-            <h3 class="card-header text-uppercase"></h3>
-            <div class="card-body">
-            <p id="date"></p>
-            <p id="temp">Temp: </p>
-            <p id="wind">Wind: </p>
-            <p id="humid">Humidity: </p>
-            <p id="uv">UV Index: </p>
+            <div class="card5">
+            <h3 class="card-header5 colorWhite" id="head2"></h3>
+            <div class="card-body5">    
+            <img id="icon2" alt="" width="50">
+            <p id="temp2">Temp: </p>
+            <p id="wind2">Wind: </p>
+            <p id="humid2">Humidity: </p>
             </div>
-            <div class="card">
-            <h3 class="card-header text-uppercase"></h3>
-            <div class="card-body">
-            <p id="date"></p>
-            <p id="temp">Temp: </p>
-            <p id="wind">Wind: </p>
-            <p id="humid">Humidity: </p>
-            <p id="uv">UV Index: </p>
             </div>
-            <div class="card">
-            <h3 class="card-header text-uppercase"></h3>
-            <div class="card-body">
-            <p id="date"></p>
-            <p id="temp">Temp: </p>
-            <p id="wind">Wind: </p>
-            <p id="humid">Humidity: </p>
-            <p id="uv">UV Index: </p>
+            <div class="card5">
+            <h3 class="card-header5 colorWhite" id="head3"></h3>
+            <div class="card-body5">
+            <img id="icon3" alt="" width="50">
+            <p id="temp3">Temp: </p>
+            <p id="wind3">Wind: </p>
+            <p id="humid3">Humidity: </p>
             </div>
+            </div>
+            <div class="card5">
+            <h3 class="card-header5 colorWhite" id="head4"></h3>
+            <div class="card-body5">
+            <img id="icon4" alt="" width="50">
+            <p id="temp4">Temp: </p>
+            <p id="wind4">Wind: </p>
+            <p id="humid4">Humidity: </p>
+            </div>
+            </div>  
+            <div class="card5">
+            <h3 class="card-header5 colorWhite" id="head5"></h3>
+            <div class="card-body5">
+            <img id="icon5" alt="" width="50">
+            <p id="temp5">Temp: </p>
+            <p id="wind5">Wind: </p>
+            <p id="humid5">Humidity: </p>
         </div>
-            </div>
-          </div>
-
+        </div>
+        </div>
+    </div>
     </main>
     <script src="./assets/script.js"></script>
   </body>
