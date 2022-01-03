@@ -30,7 +30,7 @@ var formSubmitHandler = function(event) {
 };
 
 var getLocation = function(city) {
-    var apiUrl = "http://api.openweathermap.org/geo/1.0/direct?q=" + city + "&limit=1&appid=4056500cdd900cb3dd17564286a1df8d";
+    var apiUrl = "https://api.openweathermap.org/geo/1.0/direct?q=" + city + "&limit=1&appid=4056500cdd900cb3dd17564286a1df8d";
   
     fetch(apiUrl)
       .then(function(response) {
@@ -99,7 +99,7 @@ var getLocation = function(city) {
 
   function displayWeather(city){
     
-    document.querySelector("#icon").src = "http://openweathermap.org/img/wn/"+ city.current.weather[0].icon +"@2x.png";
+    document.querySelector("#icon").src = "https://openweathermap.org/img/wn/"+ city.current.weather[0].icon +"@2x.png";
 
     temp.textContent = "Temp: " + city.current.temp + " ℉";
 
@@ -138,7 +138,7 @@ var getLocation = function(city) {
   }
   function displayFiveDay2(city){
     
-    document.querySelector("#icon1").src = "http://openweathermap.org/img/wn/"+ city.daily[2].icon +"@2x.png"
+    document.querySelector("#icon1").src = "https://openweathermap.org/img/wn/"+ city.daily[2].icon +"@2x.png"
 
     document.querySelector('#temp2').textContent = "Temp: " + city.daily[2].temp.day + " ℉";
 
@@ -205,15 +205,15 @@ var getLocation = function(city) {
 
   function setIcon(city){
 
-    document.querySelector("#icon1").src = "http://openweathermap.org/img/wn/"+ city.daily[1].weather[0].icon +"@2x.png";
+    document.querySelector("#icon1").src = "https://openweathermap.org/img/wn/"+ city.daily[1].weather[0].icon +"@2x.png";
 
-    document.querySelector("#icon2").src = "http://openweathermap.org/img/wn/"+ city.daily[2].weather[0].icon +"@2x.png";
+    document.querySelector("#icon2").src = "https://openweathermap.org/img/wn/"+ city.daily[2].weather[0].icon +"@2x.png";
 
-    document.querySelector("#icon3").src = "http://openweathermap.org/img/wn/"+ city.daily[3].weather[0].icon +"@2x.png";
+    document.querySelector("#icon3").src = "https://openweathermap.org/img/wn/"+ city.daily[3].weather[0].icon +"@2x.png";
 
-    document.querySelector("#icon4").src = "http://openweathermap.org/img/wn/"+ city.daily[4].weather[0].icon +"@2x.png";
+    document.querySelector("#icon4").src = "https://openweathermap.org/img/wn/"+ city.daily[4].weather[0].icon +"@2x.png";
 
-    document.querySelector("#icon5").src = "http://openweathermap.org/img/wn/"+ city.daily[5].weather[0].icon +"@2x.png";
+    document.querySelector("#icon5").src = "https://openweathermap.org/img/wn/"+ city.daily[5].weather[0].icon +"@2x.png";
 
   }
 
