@@ -45,6 +45,7 @@
     padding: 1% ;
     background-color: var(--dark);
     color: var(--primary);
+    justify-content: center;
   }
   
   .hero p {
@@ -53,10 +54,105 @@
   
   .app-title {
     font-size: 3rem;
-    background-color: var(--primary);
-    color: var(--dark);
-    padding: 0 10px;
-    display: inline-block;
+    color: var(--primary);
+    border-radius: var(--border-radius);
+    text-align: center;
+  }
+ /*Needs to be edited*/
+  .btn {
+    font-size: 1.3rem;
+    text-decoration:none;
+    padding: 6px 5px;
+    width: 100%;
+    display: block;
+    margin: 5px 0;
+    border-radius: var(--border-radius);
+    color: var(--primary);
+    border: none;
+    outline: none;
+    background-color: var(--light-dark);
+    box-shadow: 3px 3px var(--dark);
+    transform: translate(-1px, -1px);
+  }
+  .btn-inline {
+    display: inline;
+  }
+  .btn:hover {
+    color: var(--primary);
+    background-color: var(--tertiary);
+    transform: translate(0, 0);
+    box-shadow: 2px 2px var(--dark);
+  }
+
+  .card {
+    margin: 0 0 20px 0;
+    border: 3px ;
+    border-radius: var(--border-radius);
+  }
+  
+  .card-header {
+    padding: 2.5%;
+    border-radius: calc(.18rem - 1px) calc(.18rem - 1px) 0 0;
+  }
+  
+  .card-body {
+    padding: 2.5%;
+  }
+
+  .form-label,
+  .form-input,
+  .form-textarea {
+    display: block;
+  }
+  
+  .form-label {
+    font-size: 1.1rem;
+    margin: 0 0 0 5px;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 3%;
+    margin: 5px 0;
+    font-size: 1.2rem;
+    border: 2px solid var(--light-dark);
     border-radius: var(--border-radius);
   }
 
+  .list-group {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .list-item {
+    margin-bottom: 10px;
+    padding: 1.5%;
+    border-radius: var(--border-radius);
+    background-color: var(--light-dark);
+    color: var(--primary);
+    text-decoration: none;
+  }
+  
+  .list-item:hover {
+    background-color: var(--dark);
+  }
+  
+  .min-100-vh {
+    min-height: 100vh;
+  }
+  
+  .min-100-vw {
+    min-width: 100vw;
+  }
+  
+
+  .text-uppercase {
+    text-transform: uppercase;
+  }
+  
+  
+
+  .flex-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
